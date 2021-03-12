@@ -9,7 +9,6 @@ context('Abrir plataforma', () => {
      it('Cadastro na plataforma (consumidor)', () => {
         cy.get('.login-ra__account-text').click()
         cy.get('.padding-35 > .btn').click()
-        cy.contains('cadastrar').click()
         cy.get('.col-md-offset-1 > .card > .box-form > .btn').click()
         
      }
