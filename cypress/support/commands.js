@@ -23,19 +23,6 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
-Cypress.Commands.add("atalhos", data => {
-    cy.get('.name-gap-form > .col-sm-12 > .custom-box > .form-control').type(data.CompleteName)
-    cy.get(':nth-child(3) > .col-sm-12 > .custom-box > .form-control').type(data.Birthday)
-    cy.get(':nth-child(3) > :nth-child(2) > .custom-box').type('19145519315')
-    cy.get('.padding-line > :nth-child(3) > .custom-box').type(data.Telefone)
-    cy.get('#gender').click({Force:true}).get('#ui-select-choices-row-0-0').contains('Feminino').click()
-    cy.get('#state').click({Force:true}).get('#ui-select-choices-row-1-4').contains('Bahia').click()
-    cy.get('#city > .ui-select-match > .btn-default > .ui-select-placeholder').click({force:true}).get('#ui-select-choices-row-2-0 > .ui-select-choices-row-inner > .ng-binding').contains('Salvador').click()
-    cy.get('.col-md-6 > .custom-box > .form-control').type(data.Email)
-    cy.get(':nth-child(8) > :nth-child(2) > .custom-box > .form-control').type(data.Password)
-    cy.get(':nth-child(8) > :nth-child(3) > .custom-box > .form-control').type(data.Password)})
-
-
 Cypress.Commands.add("login", sinon => {
     cy.visit('https://www.reclameaqui.com.br')
     cy.get('.login-ra__account-text').click() 
