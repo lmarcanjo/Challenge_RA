@@ -23,16 +23,19 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
+
+import 'cypress-wait-until';
+
 Cypress.Commands.add("login", sinon => {
     cy.visit('https://www.reclameaqui.com.br')
     cy.get('.login-ra__account-text').click() 
     cy.get('#username').type(sinon.Username)
     cy.get('#password').type(sinon.PassWord)
     cy.get('#kc-login').click({Force:true})
-    cy.wait(20000) //Fazer o recaptcha manualmente.
+    cy.wait(10000) //Fazer o recaptcha manualmente.
     cy.get('.person_description > [style=""]').click()
     cy.get(':nth-child(2) > .link-user > .area-logged').click()
-    cy.get('#btn-complainFlow-userAccount').click()
+    
     
 })
 

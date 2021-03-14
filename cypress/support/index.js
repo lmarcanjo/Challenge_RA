@@ -15,9 +15,15 @@
 
 // Import commands.js using ES2015 syntax:
 import './commands'
+import 'cypress-iframe'
 Cypress.on('uncaught:exception', (err, runnable) => {
   return false;
+  
 });
+
+cy.faker=require('faker-br');
+
+
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
