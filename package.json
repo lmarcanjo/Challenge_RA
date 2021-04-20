@@ -1,8 +1,8 @@
 {
   "name": "3-automation",
-  "version": "1.0.0",
+  "version":"1.0.0",
   "description": "Challenge RA",
-  "main": "index.js",
+  "master": "index.js",
   "scripts": {
     "test": "cypress run",
     "cypress:ci"
