@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "cypress run"
+    "cypress:ci": "concurrently \"cypress run\" --kill-others \"ng serve\" --success first",
   },
   "keywords": [
     "cypress",
