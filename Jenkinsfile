@@ -32,14 +32,13 @@ pipeline {
             sh "npm run e2e:record:parallel"
           }
           }
-     }
+     
         stage('tester B') {
           steps {
             echo "Running build ${env.BUILD_ID}"
             sh "npm run e2e:record:parallel"
           }
         }
-
   post {
       always {
       echo 'Stopping local server'
@@ -47,4 +46,6 @@ pipeline {
     }
   }
 }        
+}
+}
 }
