@@ -21,7 +21,7 @@ pipeline {
     }
     stage('cypress parallel tests') {
       environment {
-        CYPRESS_RECORD_KEY = credentials('cypress-example-kitchensink-record-key')
+        CYPRESS_RECORD_KEY = credentials('Challenge_RA-record-key')
         CYPRESS_trashAssetsBeforeRuns = 'false'
       }
     }
@@ -39,6 +39,7 @@ pipeline {
             sh "npm run e2e:record:parallel"
           }
         }
+     }
   post {
       always {
       echo 'Stopping local server'
