@@ -61,7 +61,7 @@
   },
   "dependencies": {
     "npm-run-all": "^4.1.2",
-    "serve": "11.3.0"
+    "serve": "11.3.0",
     "cypress": "6.7.1",
     "faker-br": "0.4.1"
   },
@@ -82,7 +82,7 @@
     "start-server-and-test": "1.10.6",
     "stop-build": "1.1.0",
     "typescript": "3.7.4",
-    "yaml-lint": "1.2.4"
+    "yaml-lint": "1.2.4",
     "cypress-iframe": "1.0.1",
     "cypress-wait-until": "1.7.1",
     "facer": "0.0.1",
