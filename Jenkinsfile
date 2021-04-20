@@ -25,15 +25,14 @@ pipeline {
         CYPRESS_trashAssetsBeforeRuns = 'false'
       }
     }
-     parallel {
+   parallel {
           stage('tester A') {
           steps {
             echo "Running build ${env.BUILD_ID}"
             sh "npm run e2e:record:parallel"
           }
-          }
-     
-        stage('tester B') {
+        }
+          stage('tester B') {
           steps {
             echo "Running build ${env.BUILD_ID}"
             sh "npm run e2e:record:parallel"
