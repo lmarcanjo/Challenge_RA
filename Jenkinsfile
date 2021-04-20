@@ -13,7 +13,7 @@ pipeline {
         sh 'npm run cy:verify'
       }
     }
-  }
+  
     stage('start local server') {
       steps {
         sh 'nohup npm run start:ci &'
@@ -47,3 +47,4 @@ pipeline {
     }
   }
 }        
+}
