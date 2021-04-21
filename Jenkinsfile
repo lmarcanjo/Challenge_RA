@@ -35,7 +35,7 @@ pipeline {
         // to record we need to set an environment variable
         // we can load the record key variable from credentials store
         // see https://jenkins.io/doc/book/using/using-credentials/
-        CYPRESS_RECORD_KEY = credentials('Challenge_RA-record-key')
+        CYPRESS_RECORD_KEY = credentials('cypress-example-kitchensink-record-key')
         // because parallel steps share the workspace they might race to delete
         // screenshots and videos folders. Tell Cypress not to delete these folders
         CYPRESS_trashAssetsBeforeRuns = 'false'
@@ -61,14 +61,6 @@ pipeline {
         }
       }
 
-    }
-  }
-
-  post {
-    // shutdown the server running in the background
-    always {
-      echo 'Stopping local server'
-      sh 'pkill -f http-server'
     }
   }
 }
