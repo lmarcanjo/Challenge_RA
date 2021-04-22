@@ -16,7 +16,7 @@ COPY cypress ./cypress
 
 # avoid many lines of progress bars during install
 # https://github.com/cypress-io/cypress/issues/1243
-ENV CI=1
+ENV CI=0
 
 # install NPM dependencies and Cypress binary
 RUN npm ci
