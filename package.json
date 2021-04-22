@@ -20,7 +20,7 @@
     "test:allurereport": "cypress run -b chrome -r mocha-allure-reporter -s cypress/integration/features/*.feature",
     "generatereport": "allure generate allure-results --clean -o allure-report && allure open allure-report",
     "test:visual-base": "cypress run -b chrome --env updateSnapshots=true  --spec cypress/integration/features/*VisualTest.feature",
-    "test:visual-actual": "cypress run -b chrome --env failOnSnapshotDiff=false --reporter cypress-image-snapshot/reporter --spec cypress/integration/features/*VisualTest.feature",
+    "test:visual-actual": "cypress run -b chrome --env failOnSnapshotDiff=false --reporter cypress-image-snapshot/reporter --spec cypress/integration/features/*VisualTest.feature"
   },
     "keywords": [
     "cypress",
