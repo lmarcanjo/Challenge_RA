@@ -16,7 +16,7 @@
   "author": "Larcanjo",
   "license": "MIT",
   "dependencies": {
-    "cypress": "^6.6.0",
+    "cypress": "^6.7.1",
     "faker-br": "^0.4.1"
   },
   "devDependencies": {
