@@ -2,11 +2,11 @@
   "name": "3-automation",
   "version": "1.0.0",
   "description": "Challenge RA",
-  "main": "index.js"
+  "main": "index.js",
   "scripts": {
     "test": "cypress run"
     "cypress:ci", 
-    "concurrently \"cypress run\" --kill-others \"ng serve\" --success first"
+    "concurrently \"cypress run\" --kill-others \"ng serve\" --success first",
   },
   "keywords": [
     "cypress",
