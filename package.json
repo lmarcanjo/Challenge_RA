@@ -24,8 +24,7 @@
     "test:visual-actual": "cypress run -b chrome --env failOnSnapshotDiff=false --reporter cypress-image-snapshot/reporter --spec cypress/integration/features/*VisualTest.feature",
     "generatecucumberreport": "node multiple-cucumber-html-reporter.js"
   },
-  
-  "keywords": [
+    "keywords": [
     "cypress",
     "e2e",
     "automation"
@@ -53,7 +52,6 @@
     "allure-commandline": "2.0.0",
     "colon-names": "1.0.0",
     "cucumber-html-reporter": "^5.2.0",
-    "cypress": "6.1.0",
     "cypress-audit": "^0.3.0",
     "cypress-axe": "0.8.1",
     "cypress-cucumber-preprocessor": "4.0.0",
