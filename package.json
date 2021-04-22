@@ -24,5 +24,5 @@
     "cypress-wait-until": "^1.7.1",
     "facer": "0.0.1",
     "faker": "^5.4.0"
-  }
+  },
 }
