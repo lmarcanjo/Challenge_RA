@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "cypress run"
+    "cypress:ci", 
+    "concurrently \"cypress run\" --kill-others \"ng serve\" --success first"
   },
   "keywords": [
     "cypress",
@@ -14,7 +16,11 @@
   "author": "Larcanjo",
   "license": "MIT",
   "dependencies": {
+<<<<<<< HEAD
     "cypress": "^6.9.1",
+=======
+    "cypress": "^6.7.1",
+>>>>>>> e10fab972762d08d9211b25010ebeb0ec7fb8930
     "faker-br": "^0.4.1"
   },
   "devDependencies": {
