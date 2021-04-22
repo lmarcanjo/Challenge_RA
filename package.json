@@ -68,7 +68,6 @@
     "mocha-gherkin": "0.2.0",
     "mochawesome": "^6.2.2",
     "mochawesome-merge": "^2.1.0",
-    "multiple-cucumber-html-reporter": "^1.18.0",
     "start-server-and-test": "1.10.6",
     "stop-build": "1.1.0",
     "stop-only": "3.1.0",
@@ -79,14 +78,6 @@
     "hooks": {
       "pre-commit": "npm run warn-only && npm run lint:yaml",
       "pre-push": "npm run stop-only && npm run lint:yaml"
-    }
-  },
-  "cypress-cucumber-preprocessor": {
-    "cucumberJson": {
-      "generate": true,
-      "outputFolder": "cucumber-report/cucumber-json",
-      "filePrefix": "",
-      "fileSuffix": ""
     }
   },
 }
